@@ -1,0 +1,349 @@
+import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+class Product
+{
+    public static void main(String args[])
+    {
+        int ch,ch1,price=0,total=0,item=1,citem;
+        Scanner sc=new Scanner(System.in);
+		List<String> product = new ArrayList<>();
+        while(item==1)
+        {
+            System.out.println("\tPress 1 for MEN");
+            System.out.println("\tPress 2 for WOMEN");
+            System.out.println("\tPress 3 for KIDS");
+            System.out.println("\tPress 4 for EXIT");
+            System.out.println("\nEnter your choice:");
+            ch=sc.nextInt();
+            switch(ch)
+            {
+                case 1:
+                        System.out.println("\tPress 1 for CLOTH");
+                        System.out.println("\tPress 2 for FOOTWARE");
+                        System.out.println("\tPress 3 for ACCESSORIES");
+                        System.out.println("\nEnter your choice:");
+                        citem=sc.nextInt();
+                        while(citem==1)
+                        {
+                             System.out.println("1.\tT-SHIRTS\t Price:399");
+                             System.out.println("2.\tSHIRTS\t\t Price:699");
+                             System.out.println("3.\tJEANS\t\t Price:999");
+                             System.out.println("4.\tJACKET\t\t Price:799");
+                             System.out.println("Select Item:");
+                             ch=sc.nextInt();
+                             
+                             
+                        switch(ch)
+                        {
+                            case 1:
+                                    System.out.println("\nItem successfully select");
+                                    price=399;
+									product.add("T-SHIRTS"+"\t"+"399");
+                                    break;
+                            case 2:
+                                    System.out.println("\nItem successfully select");
+                                    price=699;
+									product.add("SHIRTS"+"\t"+"699");
+                                    break;
+                            case 3:
+                                    System.out.println("\nItem successfully select");
+                                    price=999;
+									product.add("JEANS"+"\t"+"999");
+                                    break;
+                            case 4:
+                                    System.out.println("\nItem successfully select");
+                                    price=799;
+									product.add("JACKET"+"\t"+"799");
+                                    break;
+                                    
+                            
+                            
+                        }
+                        total=total+price;
+                        System.out.println("Continue Shoping?\t1 for Yes\t 0 for No");
+                        citem=sc.nextInt();
+                        if(citem==0)
+                            {
+                            //System.out.println("\nYou have to pay:"+total);
+                            item=1;
+                            }
+                       }
+                       while(citem==2)
+                        {
+                             System.out.println("1.\tCASUAL SHOES\t\t Price:400");
+                             System.out.println("2.\tSPORTS SHOES\t\t Price:500");
+                             System.out.println("3.\tFORMAL SHOES\t\t Price:700");
+                             System.out.println("4.\tSANDEL SHOES\t\t Price:300");
+                             System.out.println("5.\tSLIPPERS SHOES\t\t Price:300");
+                             System.out.println("Select Item:");
+                             ch=sc.nextInt();
+                             
+                             
+                        switch(ch)
+                        {
+                            case 1:
+                                    System.out.println("\nItem successfully select");
+                                    price=400;
+									product.add("CASUAL SHOES"+"\t"+"400");
+                                    break;
+                            case 2:
+                                    System.out.println("\nItem successfully select");
+                                    price=500;
+									product.add("SPORTS SHOES"+"\t"+"500");
+                                    break;
+                            case 3:
+                                    System.out.println("\nItem successfully select");
+                                    price=700;
+									product.add("FORMAL SHOES"+"\t"+"700");
+                                    break;
+                            case 4:
+                                    System.out.println("\nItem successfully select");
+                                    price=300;
+									product.add("SANDEL SHOES"+"\t"+"300");
+                                    break;
+                            case 5:
+                                    System.out.println("\nItem successfully select");
+                                    price=300;
+									product.add("SLIPPERS SHOES"+"\t"+"300");
+                                    break;
+                                    
+                            
+                            
+                        }
+                        total=total+price;
+                        //item=0;
+                        System.out.println("Continue Shoping?\t1 for Yes\t 0 for No");
+                        citem=sc.nextInt();
+                        if(citem==0)
+                            {
+                            //System.out.println("\nYou have to pay:"+total);
+                            item=1;
+                            }
+                       }
+                       break;
+                case 2:
+                        System.out.println("\tPress 1 for CLOTH");
+                        System.out.println("\tPress 2 for FOOTWARE");
+                        System.out.println("\tPress 3 for ACCESSORIES");
+                        System.out.println("\nEnter your choice:");
+                        citem=sc.nextInt();
+                        while(citem==1)
+                        {
+                             System.out.println("1.\tT-SHIRTS\t Price:399");
+                             System.out.println("2.\tKURTI\t\t Price:699");
+                             System.out.println("3.\tJEANS\t\t Price:999");
+                             System.out.println("4.\tJACKET\t\t Price:799");
+                             System.out.println("Select Item:");
+                             ch=sc.nextInt();
+                             
+                             
+                        switch(ch)
+                        {
+                            case 1:
+                                    System.out.println("\nItem successfully select");
+                                    price=399;
+									product.add("T-SHIRTS"+"\t"+"399");
+                                    break;
+                            case 2:
+                                    System.out.println("\nItem successfully select");
+                                    price=699;
+									product.add("KURTI"+"\t"+"699");
+                                    break;
+                            case 3:
+                                    System.out.println("\nItem successfully select");
+                                    price=999;
+									product.add("JEANS"+"\t"+"999");
+                                    break;
+                            case 4:
+                                    System.out.println("\nItem successfully select");
+                                    price=799;
+									product.add("JACKET"+"\t"+"799");
+                                    break;
+                                    
+                            
+                            
+                        }
+                        total=total+price;
+                        System.out.println("Continue Shoping?\t1 for Yes\t 0 for No");
+                        citem=sc.nextInt();
+                        if(citem==0)
+                            {
+                            System.out.println("\nYou have to payy:"+total);
+                            item=1;
+                            break;
+                            }
+                       }
+                       while(citem==2)
+                        {
+                             System.out.println("1.\tCASUAL SHOES\t\t Price:400");
+                             System.out.println("2.\tSPORTS SHOES\t\t Price:500");
+                             System.out.println("3.\tFORMAL SHOES\t\t Price:700");
+                             System.out.println("4.\tSANDEL SHOES\t\t Price:300");
+                             System.out.println("5.\tSLIPPERS SHOES\t\t Price:300");
+                             System.out.println("Select Item:");
+                             ch=sc.nextInt();
+                             
+                             
+                        switch(ch)
+                        {
+                            case 1:
+                                    System.out.println("\nItem successfully select");
+                                    price=400;
+									product.add("CASUAL SHOES"+"\t"+"400");
+                                    break;
+                            case 2:
+                                    System.out.println("\nItem successfully select");
+                                    price=500;
+									product.add("SPORTS SHOES"+"\t"+"500");
+                                    break;
+                            case 3:
+                                    System.out.println("\nItem successfully select");
+                                    price=700;
+									product.add("FORMAL SHOES"+"\t"+"700");
+                                    break;
+                            case 4:
+                                    System.out.println("\nItem successfully select");
+                                    price=300;
+									product.add("SANDEL SHOES"+"\t"+"300");
+                                    break;
+                            case 5:
+                                    System.out.println("\nItem successfully select");
+                                    price=300;
+									product.add("SLIPPERS SHOES"+"\t"+"300");
+                                    break;
+                                    
+                            
+                            
+                        }
+                        total=total+price;
+                        //item=0;
+                        System.out.println("Continue Shoping?\t1 for Yes\t 0 for No");
+                        citem=sc.nextInt();
+                        if(citem==0)
+                            {
+                            System.out.println("\nYou have to pay:"+total);
+                            item=1;
+                            }
+                       }
+                       break;
+                case 3:
+                        System.out.println("\tPress 1 for CLOTH");
+                        System.out.println("\tPress 2 for FOOTWARE");
+                        System.out.println("\tPress 3 for ACCESSORIES");
+                        System.out.println("\nEnter your choice:");
+                        citem=sc.nextInt();
+                        while(citem==1)
+                        {
+                             System.out.println("1.\tT-SHIRTS\t Price:399");
+                             System.out.println("2.\tSHIRTS\t\t Price:699");
+                             System.out.println("3.\tJEANS\t\t Price:999");
+                             System.out.println("4.\tJACKET\t\t Price:799");
+                             System.out.println("Select Item:");
+                             ch=sc.nextInt();
+                             
+                             
+                        switch(ch)
+                        {
+                            case 1:
+                                    System.out.println("\nItem successfully select");
+                                    price=399;
+                                    break;
+                            case 2:
+                                    System.out.println("\nItem successfully select");
+                                    price=699;
+                                    break;
+                            case 3:
+                                    System.out.println("\nItem successfully select");
+                                    price=999;
+                                    break;
+                            case 4:
+                                    System.out.println("\nItem successfully select");
+                                    price=799;
+                                    break;
+                                    
+                            
+                            
+                        }
+                        total=total+price;
+                        System.out.println("Continue Shoping?\t1 for Yes\t 0 for No");
+                        citem=sc.nextInt();
+                        if(citem==0)
+                            {
+                            System.out.println("\nYou have to pay:"+total);
+                            item=1;
+                            }
+                       }
+                       while(citem==2)
+                        {
+                             System.out.println("1.\tCASUAL SHOES\t\t Price:400");
+                             System.out.println("2.\tSPORTS SHOES\t\t Price:500");
+                             System.out.println("3.\tFORMAL SHOES\t\t Price:700");
+                             System.out.println("4.\tSANDEL SHOES\t\t Price:300");
+                             System.out.println("5.\tSLIPPERS SHOES\t\t Price:300");
+                             System.out.println("Select Item:");
+                             ch=sc.nextInt();
+                             
+                             
+                        switch(ch)
+                        {
+                            case 1:
+                                    System.out.println("\nItem successfully select");
+                                    price=400;
+                                    break;
+                            case 2:
+                                    System.out.println("\nItem successfully select");
+                                    price=500;
+                                    break;
+                            case 3:
+                                    System.out.println("\nItem successfully select");
+                                    price=700;
+                                    break;
+                            case 4:
+                                    System.out.println("\nItem successfully select");
+                                    price=300;
+                                    break;
+                            case 5:
+                                    System.out.println("\nItem successfully select");
+                                    price=300;
+                                    break;
+                                    
+                            
+                            
+                        }
+                        total=total+price;
+                        //item=0;
+                        System.out.println("Continue Shoping?\t1 for Yes\t 0 for No");
+                        citem=sc.nextInt();
+                        if(citem==0)
+                            {
+                            //System.out.println("\nYou have to pay:"+total);
+                            item=1;
+                            }
+                       }
+                       break;
+                case 4: 
+                        int day,month,year;
+                        int second,minute,hour;
+        
+                        GregorianCalendar date=new GregorianCalendar();
+        
+                        day=date.get(Calendar.DAY_OF_MONTH);
+                        month=date.get(Calendar.MONTH);
+                        year=date.get(Calendar.YEAR);
+                        
+                        second=date.get(Calendar.SECOND);
+                        minute=date.get(Calendar.MINUTE);
+                        hour=date.get(Calendar.HOUR);
+                        System.out.println("\n\nPurchase DATE:"+day+"/"+(month+1)+"/"+year+"\tand TIME:"+hour+":"+minute+":"+second);
+                        //System.out.println(day+"/"+(month+1)+"/"+year+"\t"+hour+":"+minute+":"+second);
+                        //System.out.println(hour+":"+minute+":"+second);
+						System.out.println("\n"+product);
+                        System.out.println("\nYou have to pay:"+total);
+                        item=0;
+                        break;
+            }
+        }
+    }
+}
+           
